@@ -22,7 +22,7 @@ var TodoList = Backbone.Collection.extend({
   },
 
   // Filter down the list to only todo items that are still not finished.
-  remianing: function() {
+  remaining: function() {
     return this.without.apply(this, this.completed())
   },
 
